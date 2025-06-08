@@ -22,7 +22,7 @@ export function decreaseCartItemQuantity(productId) {
 }
 
 // Reducer
-export default function cartReducer(state = [], action) {
+export default function cartSlice(state = [], action) {
   switch (action.type) {
     case CART_ADD_ITEM:
       const existingItem = state.find(
